@@ -13,13 +13,42 @@
     opacity: 0.6;
 }
 @font-face { font-family: HelvetiHand; src: url('HelvetiHand.ttf'); }
-
+.collapsible {
+  background: about.png;
+  color: #444;
+  cursor: pointer;
+  padding: 0px;
+  width: 500px;
+  height: 85px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.content {
+  padding: 0 0px;
+  background-color: #CDCECA40;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 500px
+}
 </style>
 
 <body style='background-color:#FDF5E6; font-family: HelvetiHand;'><center>
 	<img src='oliverqiu.png' alt='lp4' width='500' />
-	<br><br>
-	
+	<br>
+	<a href="sheetslessons" class='icon'><img src='sheetslessons.png' alt='sheetslessons' width='500' /></a>
+	<br>
+	<button class="collapsible"><a class='icon'><img src='about.png' alt='about' width='500' /></a></button>
+	<div class="content">
+	  <h1>Hello, thanks for visiting!</h1>
+		<p>I'm Oliver and I like things, most of all music! This is my very minimal website where you can find a bunch of links.</p>
+		<p>I transcribe, share knowledge about, and cover music I love on youtube. You can find my original music on most streaming services like Spotify. See what I'm listening to on my last.fm!</p>
+		<p>I love videogame art design and have some game photography on my flickr and wallpaper engine workshop.</p>
+		<p>If you want to get in touch and/or see what I'm up to, check out my socials and email.</p>
+	</div>
+	<br>
 	<div>
 		<a href="https://www.youtube.com/c/naughtoliver" target='_blank' class='icon'><img src='youtube.png' alt='yt' width="50"/></a>
 		<a><img src='spotify.png' alt='spotify' width="50"/></a>
@@ -30,14 +59,24 @@
 		<a href="mailto:me@oliverqiu.com" class='icon'><img src='email.png' alt='email' width="50"/></a>
 	</div>
 	
-	<div style="color:#484848; width:500px;">
-		<h1>Hello, thanks for visiting!</h1>
-		<p>I'm Oliver and I like things, most of all music! This is my very minimal website where you can find a bunch of links.</p>
-		<p>I transcribe, share knowledge about, and cover music I love on youtube. You can find my original music on most streaming services like Spotify. See what I'm listening to on my last.fm!</p>
-		<p>I love videogame art design and have some game photography on my flickr and wallpaper engine workshop.</p>
-		<p>If you want to get in touch and/or see what I'm up to, check out my socials and email.</p>
-	</div>
+	<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.maxHeight){
+		  content.style.maxHeight = null;
+		} else {
+		  content.style.maxHeight = content.scrollHeight + "px";
+		}
+	  });
+	}
+	</script>
 	
 </center></body>
+
 
 </html>
