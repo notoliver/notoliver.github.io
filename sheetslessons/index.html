@@ -6,6 +6,9 @@
 	<link rel='icon' href='favicon.ico' type='image/ico'>
 	<style>
 		@font-face { font-family: HelvetiHand; src: url('../HelvetiHand.ttf'); }
+		.icon:hover img {
+			opacity: 0.4;
+		}
 		body {
 		  background-color:#FDF5E6;
 		  font-family: HelvetiHand;
@@ -15,52 +18,193 @@
 		  display: flex;
 		  flex-wrap: wrap;	  
 		  justify-content: center;
-		  max-width:1400px;
-		  border: 1px solid #000;
+		  max-width:1100px;
+		  /*border: 1px solid #000;*/
 		}
 		figure {
 		  margin: 7px;
-		  border: 1px solid #000;
-			width:32%;
-		  min-width:400px;
-		  
-		  
+		  width:32%;
+		  min-width:340px;
+		  flex-grow:1;
+		  /*background-color:#CDCECA;*/
+		}
+		figcaption{
+			font-size:17px;
+			padding: 3px;
+    		text-align: center;
 		}
 		img {
 		  max-width: 100%;
 		  max-height: 100%;
 		}
-		
+		/* .container::after{
+		  content: '';
+		  flex-grow: 1000000000;
+		} */
+		.bontainer {
+		  position: relative;
+		}
+		.overlay {
+		  position: absolute;
+		  top: 0;
+		  bottom: 6px;
+		  left: 0;
+		  right: 0;
+		  opacity: 0;
+		  transition: .2s ease;
+		  background-color: #ffffff;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		}
+
+		.bontainer:hover .overlay {
+		  opacity: 0.8;
+		}
 	</style>
 </head>
 
 <body><center>
 	<div class='container'>
-		<figure style='flex-grow:1'><img src='thumbnails/smallworlds.jpg' alt='smallworlds'/><figcaption>An elephant at sunset</figcaption></figure>
-		<figure style='flex-grow:1'><img src='thumbnails/firetreasure.jpg' alt='firetreasure'/><figcaption>An elephant at sunset</figcaption></figure>
-		<figure style='flex-grow:1'><img src='thumbnails/sheeta.jpg' alt='sheeta'/><figcaption>An elephant at sunset</figcaption></figure>
-		<figure style='flex-grow:1'><img src='thumbnails/danceonlywithme.jpg' alt='danceonlywithme'/><figcaption>An elephant at sunset</figcaption></figure>
-		<figure style='flex-grow:1'><img src='thumbnails/telephonenumber.jpg' alt='telephonenumber'/><figcaption>An elephant at sunset</figcaption></figure>
-		<figure style='flex-grow:1'><img src='thumbnails/greyarea.jpg' alt='greyarea'/><figcaption>An elephant at sunset</figcaption></figure>
-		<figure><img src='thumbnails/air.jpg' alt='air'/><figcaption>An elephant at sunset</figcaption></figure>
+		<figure>
+			<div class = 'bontainer'>
+			<img src='thumbnails/smallworlds.jpg' alt='smallworlds'/>
+				<div class='overlay'>
+					<div>
+						<a href='https://youtu.be/h4zrNvQnh40' target='_blank' class='icon'><img src='learnwatch.png' alt='yt' height='60'/></a>	
+						<br>
+						<a href='https://youtu.be/nHc_7yeiLvc?t=205' target='_blank' class='icon'><img src='listenoriginal.png' alt='listen' height='60'/></a>
+						<br>
+						<a href='pdfs/small worlds (outro) (mac miller).pdf' target='_blank' class='icon'><img src='leadsheet.png' alt='sheet' height='60'/></a>					
+					</div>
+				</div>
+			</div>
+			<figcaption>Small Worlds (Outro) (Mac Miller) Guitar Cover + Tutorial</figcaption>
+		</figure>
+		<figure>
+			<div class = 'bontainer'>
+			<img src='thumbnails/firetreasure.jpg' alt='firetreasure'/>
+				<div class='overlay'>
+					<div>
+						<a href='https://youtu.be/ukj0jnUrioA' target='_blank' class='icon'><img src='learnwatch.png' alt='yt' height='60'/></a>	
+						<br>
+						<a href='https://youtu.be/crYDsce53CQ' target='_blank' class='icon'><img src='listenoriginal.png' alt='listen' height='60'/></a>
+						<br>
+						<a href='pdfs/firetreasurevariation.pdf' target='_blank' class='icon'><img src='leadsheet.png' alt='sheet' height='60'/></a>					
+					</div>
+				</div>
+			</div>
+			<figcaption>Fire Treasure (Yuji Ohno) Guitar Cover + Harmonic Anaylsis</figcaption>
+		</figure>
+		<figure>
+			<div class = 'bontainer'>
+			<img src='thumbnails/sheeta.jpg' alt='sheeta'/>
+				<div class='overlay'>
+					<div>
+						<a href='https://youtu.be/DXvVzNXEgeY' target='_blank' class='icon'><img src='coverwatch.png' alt='yt' height='60'/></a>	
+						<br>
+						<a href='https://youtu.be/8qMli8gVMeQ' target='_blank' class='icon'><img src='listenoriginal.png' alt='listen' height='60'/></a>
+						<br>
+						<a href='pdfs/sheeta (mac demarco) (bass).pdf' target='_blank' class='icon'><img src='basstab.png' alt='btab' height='55'/></a>	
+						<a href='pdfs/sheeta (mac demarco) (guitar).pdf' target='_blank' class='icon'><img src='guitartab.png' alt='gtab' height='55'/></a>				
+					</div>
+				</div>
+			</div>
+			<figcaption>Sheeta (Mac DeMarco) Cover</figcaption>
+		</figure>
+		<figure>
+			<div class = 'bontainer'>
+			<img src='thumbnails/danceonlywithme.jpg' alt='danceonlywithme'/>
+				<div class='overlay'>
+					<div>
+						<a href='https://youtu.be/fOgbv9NB1Hw' target='_blank' class='icon'><img src='learnwatch.png' alt='yt' height='60'/></a>	
+						<br>
+						<a href='https://youtu.be/b6UGqvxiZqY' target='_blank' class='icon'><img src='listenoriginal.png' alt='listen' height='60'/></a>
+						<br>
+						<a href='pdfs/danceonlywithme.pdf' target='_blank' class='icon'><img src='leadsheet.png' alt='sheet' height='60'/></a>					
+					</div>
+				</div>
+			</div>
+			<figcaption>Dance Only With Me (Jule Styne/Blossom Dearie) Piano Cover + Harmonic Analysis</figcaption>
+		</figure>
+		<figure>
+			<div class = 'bontainer'>
+			<img src='thumbnails/telephonenumber.jpg' alt='telephonenumber'/>
+				<div class='overlay'>
+					<div>
+						<a href='https://youtu.be/W3VZPSr9lec' target='_blank' class='icon'><img src='coverwatch.png' alt='yt' height='60'/></a>	
+						<br>
+						<a href='https://youtu.be/I0JVRcJLea8' target='_blank' class='icon'><img src='listenoriginal.png' alt='listen' height='60'/></a>
+						<br>
+						<a href='pdfs/telephonenumber.pdf' target='_blank' class='icon'><img src='leadsheet.png' alt='sheet' height='60'/></a>					
+					</div>
+				</div>
+			</div>
+			<figcaption>Telephone Number (Junko Ohashi) Guitar Cover</figcaption>
+		</figure>
+		<figure>
+			<div class = 'bontainer'>
+			<img src='thumbnails/foundme.jpg' alt='foundme'/>
+				<div class='overlay'>
+					<div>
+						<a href='https://youtu.be/HJqWLETxWWU' target='_blank' class='icon'><img src='coverwatch.png' alt='yt' height='60'/></a>	
+						<br>
+						<a href='https://youtu.be/uKMzlzn4Nog' target='_blank' class='icon'><img src='listenoriginal.png' alt='listen' height='60'/></a>
+						<br>
+						<a href='pdfs/foundme.pdf' target='_blank' class='icon'><img src='guitartab.png' alt='gtab' height='60'/></a>					
+					</div>
+				</div>
+			</div>
+			<figcaption>Found Me (Men I Trust) Instrumental Cover + Tabs/Notes</figcaption>
+		</figure>
+		<figure>
+			<div class = 'bontainer'>
+			<img src='thumbnails/greyarea.jpg' alt='greyarea'/>
+				<div class='overlay'>
+					<div>
+						<a href='https://youtu.be/ox7SBwxKWpY' target='_blank' class='icon'><img src='learnwatch.png' alt='yt' height='60'/></a>	
+						<br>
+						<a href='https://youtu.be/CfjzNDD83eY' target='_blank' class='icon'><img src='listenoriginal.png' alt='listen' height='60'/></a>				
+					</div>
+				</div>
+			</div>
+			<figcaption>Grey Area (Jerry Paper) Guitar Cover + Chords</figcaption>
+		</figure>
+		<figure>
+			<div class = 'bontainer'>
+			<img src='thumbnails/air.jpg' alt='air'/>
+				<div class='overlay'>
+					<div>
+						<a href='https://youtu.be/gzjhc_eVaPU' target='_blank' class='icon'><img src='learnwatch.png' alt='yt' height='60'/></a>	
+						<br>
+						<a href='https://youtu.be/Kawq6AZrtdQ' target='_blank' class='icon'><img src='listenoriginal.png' alt='listen' height='60'/></a>
+						<br>
+						<a href='pdfs/air.pdf' target='_blank' class='icon'><img src='leadsheet.png' alt='sheet' height='60'/></a>					
+					</div>
+				</div>
+			</div>
+			<figcaption>Air (Men I Trust) Hold Music Cover + Harmonic Analysis + Guitar Chords</figcaption>
+		</figure>
+		<figure>
+			<div class = 'bontainer'>
+			<img src='thumbnails/allnight.jpg' alt='allnight'/>
+				<div class='overlay'>
+					<div>
+						<a href='https://youtu.be/I-2cIEoqMU4' target='_blank' class='icon'><img src='coverwatch.png' alt='yt' height='60'/></a>	
+						<br>
+						<a href='https://youtu.be/hfah_Xe62r0' target='_blank' class='icon'><img src='listenoriginal.png' alt='listen' height='60'/></a>
+						<br>
+						<a href='pdfs/allnight.pdf' target='_blank' class='icon'><img src='guitartab.png' alt='gtab' height='60'/></a>					
+					</div>
+				</div>
+			</div>
+			<figcaption>All Night (Men I Trust) Guitar Cover + Chords</figcaption>
+		</figure>
 	</div>
 
-<p>Window height: <span id="height"></span></p>
-<p>Window width: <span id="width"></span></p>
-	
+	<br/><br/><br/><br/>
+	<p><a href='../'>back home</a></p>
 
 </center></body>
-
-<script>
-	const heightOutput = document.querySelector('#height');
-	const widthOutput = document.querySelector('#width');
-	heightOutput.textContent = window.innerHeight;
-	widthOutput.textContent = window.innerWidth;
-	function reportWindowSize() {
-	  heightOutput.textContent = window.innerHeight;
-	  widthOutput.textContent = window.innerWidth;
-	}
-	window.onresize = reportWindowSize;
-</script>
 
 </html>
