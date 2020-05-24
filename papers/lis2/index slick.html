@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Life Is Strange 2</title>
+	<link rel='icon' href='../../favicon.ico' type='image/ico'>	
+	<meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
+</head>
+
+<style>
+	@font-face { font-family: HelvetiHand; src: url('../../HelvetiHand.ttf'); }
+	body{
+		background-color:#fffdfd;
+		font-family: HelvetiHand;
+		overflow-y: hidden;
+		overflow-x: auto; 
+	}
+	.floater {
+	  position: fixed;
+	}
+	.floaterNE{
+		top: 12px;
+		right: 25px;
+	}
+	.floaterNW{
+		top: 12px;
+		left: 25px;
+	}
+	.floater span {
+	  text-align: right;
+	  float: right;
+	  
+	  padding: 5px;
+	  line-height: 1.4;
+	  margin: 8px 15px 8px 0;
+	}
+	.box {
+		display: flex;
+		height: 100vh;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+		white-space: nowrap;
+		overflow: visible;
+		margin: 0;	
+		
+	}	
+	.box img {	
+		height: 700px;	
+	}
+	.img:hover{
+		opacity: 0.1;
+	}
+	.bontainer {
+		position: relative;
+	}
+	.overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0px;
+		left: 0;
+		right: 0;
+		opacity: 0;
+		transition: .2s ease;
+		background-color: #0000004f;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.bontainer:hover .overlay {
+		opacity: 1;
+	}
+	a{
+		color: #ffffff;
+		text-decoration: none;
+	}
+</style>
+
+<body>
+	<div class="box">
+		<div style="margin: 0 470px">
+			<div class="bontainer">
+				<img src="1.png"/>
+				<div class='overlay'>
+					<div><a href='https://live.staticflickr.com/65535/49185018858_1d613ee810_o_d.png'>Wolves (4663x7560)</a></div>
+				</div>
+			</div>
+		</div>
+		<div style="margin: 0 270px">
+			<div class="bontainer">
+				<img src="2.png"/>
+				<div class='overlay'>
+					<div><a href='https://live.staticflickr.com/65535/48656069191_2bb37f0c50_o_d.png'>R&R (6720x3780)</a></div>
+				</div>
+			</div>
+		</div>
+		<div style="margin: 0 270px">
+			<div class="bontainer">
+				<img src="3.png"/>
+				<div class='overlay'>
+					<div><a href='https://live.staticflickr.com/65535/49185363116_a1ee562247_o_d.png'>Brody (8537x5918)</a></div>
+				</div>
+			</div>
+		</div>
+		<div style="margin: 0 420px">
+			<div class="bontainer">
+				<img src="4.png"/>
+				<div class='overlay'>
+					<div><a href='https://live.staticflickr.com/65535/49185562522_4577f00a52_o_d.png'>Life (2451x3205)</a></div>
+				</div>
+			</div>
+		</div>
+		<div style="margin: 0 270px">
+			<div class="bontainer">
+				<img src="5.png"/>
+				<div class='overlay'>
+					<div><a href='https://live.staticflickr.com/65535/48656063176_fc68138deb_o_d.png'>Beach (6720x3780)</a></div>
+				</div>
+			</div>
+		</div>
+		<div style="margin: 0 270px">
+			<div class="bontainer">
+				<img src="6.png"/>
+				<div class='overlay'>
+					<div><a href='https://live.staticflickr.com/65535/49185514161_f701af05ee_o_d.png'>Trek (7798x6477)</a></div>
+				</div>
+			</div>
+		</div>
+		<div style="margin: 0 270px">
+			<div class="bontainer">
+				<img src="7.png"/>
+				<div class='overlay'>
+					<div><a href='https://live.staticflickr.com/65535/49185022558_5881621707_o_d.png'>Flow (7680x4320)</a></div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="floater floaterNE">
+		<span>Life Is Strange 2<br>Dontnod Entertainment (2018)</span>
+
+	</div>
+
+	<div class="floater floaterNW">
+		
+	</div>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../slick/slick.min.js"></script>
+
+	<script>	
+	const slider = $(".box");
+	slider.slick({
+			variableWidth: true,
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,	
+			focusOnSelect: true,
+			centerMode: true,
+			arrows: false,
+			autoplay: true,
+			dots: true,
+			autoplaySpeed: 3500
+			
+		});
+	slider.on('wheel', (function(e) {
+		e.preventDefault();
+		if (e.originalEvent.deltaY < 0) {
+			$(this).slick('slickPrev');
+		} else {
+			$(this).slick('slickNext');
+		}
+	}));
+	</script>
+
+</body>
+
+
+
+
+
+</html>
