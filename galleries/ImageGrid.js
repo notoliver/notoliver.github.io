@@ -220,8 +220,8 @@
 				for(var n = 0; n < rows[i].length; n++) {
 					var image = rows[i][n];
 					output += '<div class="zoomer" style="width:' 
-					+ Math.ceil(image.width) + 'px; height:' + image.height + 'px;"><img src="' + image.image + '" style="width:' 
-					+ Math.ceil(image.width) + 'px; height:' + image.height + 'px;" /></div>';
+					+ Math.ceil(image.width) + 'px; height:' + image.height + 'px;"><img src="' + image.image + '" loading="lazy" width="' 
+					+ Math.ceil(image.width) + '" height="' + image.height + '" /></div>';
 				}
 				output += '</div>';
 			}
