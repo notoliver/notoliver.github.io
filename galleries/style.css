@@ -1,0 +1,39 @@
+.floaterNE{
+	top: 12px;
+	right: 25px;
+}
+.floater span {
+	text-align: right;
+	float: right;
+	
+	padding: 5px;
+	line-height: 1.4;
+	margin: 8px 15px 8px 0;
+}
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	
+}
+.image-row {
+	width: 100%;
+	white-space:nowrap;
+	line-height: 0;
+	display: flex;
+}
+.zoomer{	
+	transition: transform .4s ease-in-out;
+	overflow: hidden;
+	margin-right:7px;
+	margin-bottom:7px;
+	animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1};
+}
+img{
+	transition: transform .4s ease-in-out;
+}
+img:hover {
+	transform: scale(1.1);
+}
+.zoomer:hover {
+	transform: scale(1.015);
+}
