@@ -8,25 +8,29 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../style.css">
 	<style>
-		@font-face { font-family: Starjedi; src: url('Starjedi.ttf'); }
 		body{
 			background-color:#fffdfd;
 			font-family: Futura,Trebuchet MS,Arial,sans-serif; 
-		}
-		.floater {
-		    position: fixed;
-			width:250px;
-		}
+		}		
 	</style>
 </head>
 
 <body>
+
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div id="modal-content" num="9" class="modal-content"></div>
+	</div>
 	<div class="wrapper"></div>
+	<div class="floater floaterNE">
+		<span>Star Wars Battlefront II<br>EA DICE, Criterion Games, <br>Motive Studios (2017)</span>
+	</div>
+
 	<script src="../ImageGrid.js"></script>
 	<script src="../bootstrap.js"></script>
-	<div class="floater floaterNE">
-		<span>Star Wars Battlefront II<br>EA DICE, Criterion Games, Motive Studios (2017)</span>
-	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="../lightbox.js"></script>
+
 </body>
 
 </html>

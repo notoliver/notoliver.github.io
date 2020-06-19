@@ -215,13 +215,15 @@
 		 */
 		this.renderGrid = function(rows) {
 			var output = '';
+			var num=1;
 			for(var i = 0; i < rows.length; i++) {
 				output += '<div class="image-row">';
 				for(var n = 0; n < rows[i].length; n++) {
 					var image = rows[i][n];
-					output += '<div class="zoomer" style="width:' 
+					output += '<div class="zoomer" onclick="openModal();currentSlide('+num+')" class="hover-shadow" style="width:' 
 					+ Math.ceil(image.width) + 'px; height:' + image.height + 'px;"><img src="' + image.image + '" loading="lazy" width="' 
 					+ Math.ceil(image.width) + '" height="' + image.height + '" /></div>';
+					num++;
 				}
 				output += '</div>';
 			}

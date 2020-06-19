@@ -10,19 +10,19 @@
 		body {
 			background-color:#fffdfd;
 			font-family: HelvetiHand;
+			text-align: center;
 		}
 		.container {
 			display: flex;
 			flex-wrap: wrap;	  
-			justify-content: center;
-			max-width:1200px;
+			max-width:1200px;			
+			margin: 0 auto;
 		}
 		figure {
 			margin: 7px;
 			width:26%;
 			min-width:280px;
 			flex-grow:1;
-			
 			animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1};
 		}
 		figcaption{
@@ -35,28 +35,33 @@
 			max-height: 100%;
 		}
 		.zoomer{	
-			
 			overflow: hidden;
-			
 		}
 		img{
 		  transition: transform .2s ease-in-out;
 		  display: block;
 		  overflow: hidden; 
+		  margin: 0 auto;
 		}
 		img:hover {
 		  transform: scale(1.02);
 		}
-		a{
+		a {
 			text-decoration: none;
 		}
 	</style>
 </head>
 
-<body><center>
+<body>
 	<h1>I like pictures of things</h1>
 	<p>Here are some of my own! Full res downloads and more available on my <a href=https://www.flickr.com/photos/160093121@N07/ target=blank_>flickr</a></p>
 	<div class='container'>
+		<figure>
+			<div class="zoomer">
+				<a href='me_c'><img src='me_c.jpg' alt='me_c'/></a>
+			</div>
+			<figcaption>Mirror's Edge Catalyst</figcaption>
+		</figure>
 		<figure>
 			<div class="zoomer">
 				<a href='swbf2'><img src='swbf2.jpg' alt='swbf2'/></a>
@@ -74,6 +79,6 @@
 	<br><br><br><br>
 	<p><a href='../' class='icon'><img src='../home.png' alt='listen' height='50'/></a></p>
 
-</center></body>
+</body>
 
 </html>
