@@ -5,13 +5,10 @@
 	<title>Galleries</title>
 	<link rel='icon' href='../favicon.ico' type='image/ico'>
 	<meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="../assets/header.css">
+	<link rel="stylesheet" type="text/css" href="../assets/site.css">
 	<style>
 		@font-face { font-family: HelvetiHand; src: url('../HelvetiHand.ttf'); }
-		body {
-			background-color:#fffdfd;
-			font-family: HelvetiHand;
-			text-align: center;
-		}
 		.container {
 			display: flex;
 			flex-wrap: wrap;	  
@@ -37,13 +34,13 @@
 		.zoomer{	
 			overflow: hidden;
 		}
-		img{
+		.zoomer img{
 		  transition: transform .2s ease-in-out;
 		  display: block;
 		  overflow: hidden; 
 		  margin: 0 auto;
 		}
-		img:hover {
+		.zoomer img:hover {
 		  transform: scale(1.02);
 		}
 		a {
@@ -53,7 +50,9 @@
 </head>
 
 <body>
-	<h1>I like pictures of things</h1>
+	<div id="header" level="1" class = "header"></div>
+
+	<h1>Pictures of things!</h1>
 	<p>Here are some of my own! Full res downloads and more available on my <a href=https://www.flickr.com/photos/160093121@N07/ target=blank_>flickr</a></p>
 	<div class='container'>
 		<figure>
@@ -76,8 +75,7 @@
 		</figure>
 	</div>
 
-	<br><br><br><br>
-	<p><a href='../' class='icon'><img src='../home.png' alt='listen' height='50'/></a></p>
+	<script src="../assets/header.js"></script>
 
 </body>
 
