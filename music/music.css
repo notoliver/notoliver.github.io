@@ -1,0 +1,15 @@
+.icon:hover img {
+    opacity: 0.8;
+}
+@font-face { font-family: HelvetiHand; src: url('../HelvetiHand.ttf'); }
+body{
+    background-image: url('somethingsbg.jpg');
+    font-family: HelvetiHand;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
