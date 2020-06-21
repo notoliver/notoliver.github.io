@@ -11,7 +11,7 @@ if(level==2){
     path="../../"
 }
 
-console.log(path);
+//console.log(path);
 
 var text ="<div class=\"page\" style=\"wid"+
 "th:30%;justify-content: flex-end;\">\r\n\t\t\t<div clas"+
