@@ -6,31 +6,11 @@
 	<link rel='icon' href='../../favicon.ico' type='image/ico'>	
 	<meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=no">
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../style.css">
+	<link rel="stylesheet" type="text/css" href="../galleries.css">
 	<link rel="stylesheet" type="text/css" href="../../assets/header.css">
 	<link rel="stylesheet" type="text/css" href="../../assets/site.css">
 	<style>
-		@font-face { font-family: MirrorsEdge; src: url('MirrorsEdge.ttf'); }
 		@font-face { font-family: HelvetiHand; src: url('../../HelvetiHand.ttf'); }
-
-		.container {
-		  display: flex;
-		  flex-wrap: wrap;	  
-		  justify-content: center;
-		  max-width:1200px;
-		  margin: 0 auto;
-		  /*border: 1px solid #000;*/
-		}
-		.container img {
-		  margin: 7px;
-		  width:23%;
-		  height:23%;
-		  min-width:300px;
-		  min-height:300px;
-		  
-		  flex-grow:1;
-		  /*background-color:#CDCECA;*/
-		}
 	</style>
 </head>
 
@@ -47,17 +27,6 @@
 		<div id="modal-content" num="9" class="modal-content"></div>
 	</div>
 	<div class="wrapper"></div>
-	<!--<div class="container">
-		<img src="1.jpg">
-		<img src="2.jpg">
-		<img src="3.jpg">
-		<img src="4.jpg">
-		<img src="5.jpg">
-		<img src="6.jpg">
-		<img src="7.jpg">
-		<img src="8.jpg">
-		<img src="9.jpg">
-	</div>-->
 
 	<script src="../ImageGrid.js"></script>
 	<script src="../bootstrap.js"></script>
@@ -65,7 +34,13 @@
 	<script src="../lightbox.js"></script>
 	<script src="../../assets/header.js"></script>
 
-	
+	<script>
+		$(window).on('resize', function(){
+			$.getScript("../bootstrap.js");
+			$.getScript("../ImageGrid.js");
+		});
+		//testing, at steps? too heavy? wierd with google debugger resizing, not window
+	</script>
 
 </body>
 

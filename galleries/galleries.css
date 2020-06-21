@@ -1,7 +1,7 @@
 .wrapper {
 	max-width: 1200px;
 	margin: 0 auto;
-	
+	animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1};
 }
 .image-row {
 	width: 100%;
@@ -14,7 +14,7 @@
 	overflow: hidden;
 	margin-right:7px;
 	margin-bottom:7px;
-	animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1};
+
 }
 .zoomer:hover {
 	transform: scale(1.015);
@@ -67,21 +67,22 @@
 .mySlides {
 	display: none;
 	cursor: pointer;
-	
 }
 .mySlides img{
-	height: 800px;
+	max-height: 800px;
+	max-width:90%;
+	display: block;
+	margin: 0 auto;
 	animation:opac 0.5s}@keyframes opac{from{opacity:0} to{opacity:1};
 }
 .overlay {
+	width:90%;
+	margin: 0 auto;
 	position: absolute;
 	top: 0;
-	bottom: 6px;
 	left: 0;
 	right: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	bottom:0;
 }
 /* Next & previous buttons */
 .prev, .next {
