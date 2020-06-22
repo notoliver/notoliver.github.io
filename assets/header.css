@@ -1,41 +1,88 @@
-.header {
-    display: flex;			  
-    justify-content: center;
-    font-size:16px;		
-    margin-top:25px;
-    margin-bottom:25px;
-    text-transform: uppercase;
-    font-weight:575;
-    
-}
-.page{
-    display: flex;
-    flex-wrap: wrap;	 
-    line-height: 120px; 
-}
-.page img{
-    display: block;
-}
-.page.link{
-    
-}
-.spacer{
-    width:40px;
-}
-/* unvisited link */
-.header a{
+a{
     color:black;
     text-decoration:none;
 }
-@media only screen and (max-width: 700px) {
-.header {
-    display: flex;			  
-    justify-content: center;
-    font-size:16px;		
-    margin-top:25px;
-    margin-bottom:25px;
-    text-transform: lowercase;
-    font-weight:575;
+
+.topnav {
+    margin-top:6px;
+    margin-bottom:12px;
+    overflow: hidden;
+    max-width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:20px;
 }
 
+/* Style the links inside the navigation bar */
+.topnav a {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover, .navmodal a:hover {
+    opacity:70%;
+}
+
+.topnav a.active, .navmodal a.active {
+    color: #7F0000;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .menu {
+    display: none;
+    margin: 0 auto;
+}	
+.topnav .menu:hover{
+    opacity:70%;
+    cursor:pointer;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a{
+        display: none;
+    }
+    .topnav .menu {
+        display: block;
+    }
+}
+
+.navmodal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.897);
+}
+.navmodal-content {
+    font-size:30px;
+    line-height:50px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* The Close Button */
+.close {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
 }
