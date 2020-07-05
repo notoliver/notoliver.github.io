@@ -50,9 +50,9 @@ document.addEventListener('keydown', function(event) {
         closeModal();
     }
     if (key === "ArrowLeft") {
-        plusSlides(1);
+        plusSlides(-1);
     }
     if (key === "ArrowRight") {
-        plusSlides(-1);
+        plusSlides(1);
     }
 });
