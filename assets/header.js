@@ -34,11 +34,14 @@ function getIndicesOf(searchStr, str, caseSensitive) {
     return indices;
 }
 
-var results = getIndicesOf(active, text,true);
-var firstoccurance=results[0]+active.length+1;
-var secondoccurance=results[1]+active.length+1;
+var text2=text;
 
-var text2 = text.slice(0, firstoccurance) + " class=\"active\" " + text.slice(firstoccurance,secondoccurance)+ " class=\"active\" " +text.slice(secondoccurance);
+if(active!=="home"){
+    var results = getIndicesOf(active, text,true);
+    var firstoccurance=results[0]+active.length+1;
+    var secondoccurance=results[1]+active.length+1;
+    text2 = text.slice(0, firstoccurance) + " class=\"active\" " + text.slice(firstoccurance,secondoccurance)+ " class=\"active\" " +text.slice(secondoccurance);
+}
 
 document.getElementById("header").innerHTML = text2;
 

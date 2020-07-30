@@ -15,29 +15,19 @@
 	.icons img{
 		animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1};
 	}
-	.container {
-		position: relative;
-		overflow: hidden;
-		margin: 0 auto;
-		padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+	.ok{
+		animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1};
 	}
-	/* Then style the iframe to fit in the container div with full height and width */
-	.responsive-iframe {
-		position: absolute;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		width: 100%;
-		height: 100%;
+	.ok:hover{
+		opacity:0.8;
 	}
 </style>
 
 <body>
 
-	<div id="header" level="0" active="music"></div>
+	<div id="header" level="0" active="home"></div>
 
-	<div style="width:90%;max-width:560px; margin-left:auto;margin-right:auto;margin-bottom:25px;">
+	<!--<div style="width:90%;max-width:560px; margin-left:auto;margin-right:auto;margin-bottom:25px;">
 		<div class="container">
 			<iframe class="responsive-iframe" src="https://www.youtube.com/embed/9C7I07VrMXA" frameborder="0" allowfullscreen></iframe>
 		</div>
@@ -46,9 +36,10 @@
 		<div class="container">
 			<iframe class="responsive-iframe" src="https://www.youtube.com/embed/rXamErE6taE" frameborder="0" allowfullscreen></iframe>
 		</div>
-	</div>
+	</div>-->
+	<a href='music/ep3' class='ok'><img src='music/ep3.jpg' style='width:90%;max-width:650px;'/></a>
 
-	<div class="icons">
+	<div class="icons" style="position:fixed;left:0px;right:0px;bottom:10px;">
 		<a href="https://www.youtube.com/c/naughtoliver" target='_blank' class='icon'><img src='assets/youtube.png' alt='yt' width="50"/></a>
 		<a href='https://open.spotify.com/artist/4Ey282MsSL6OPSjpxFFL6d' target='_blank' class='icon'><img src='assets/spotify.png' alt='spotify' width="50"/></a>
 		<a href='https://oliverqiu.bandcamp.com' target='_blank' class='icon'><img src='assets/bandcamp.png' alt='bandcamp' width="50"/></a>
