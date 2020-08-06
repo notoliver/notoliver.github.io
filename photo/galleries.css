@@ -1,5 +1,5 @@
 .wrapper {
-	max-width: 1250px;
+	max-width: 1600px;
 	margin: 0 auto;
 	animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1};
 }
