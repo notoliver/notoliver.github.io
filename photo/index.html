@@ -19,7 +19,7 @@
 	
 	<div id="myModal" class="modal">
 		<span class="close cursor" onclick="closeModal()">&times;</span>
-		<div id="modal-content" num="10" class="modal-content"></div>
+		<div id="modal-content" num="12" class="modal-content"></div>
 	</div>
 	<div class="wrapper"></div>
 
@@ -30,10 +30,30 @@
 	<script src="../assets/header.js"></script>
 
 	<script>
+		function resizeShit(){
+			var stuff = document.querySelectorAll('.mySlides > img');
+			var w = window.innerWidth;
+			var h = window.innerHeight;
+			if(w>h){//constant height
+				for(var i=0;i<stuff.length;i++){
+					stuff[i].style.width='auto';
+					stuff[i].style.height=h-100+'px';
+				}
+			}
+			if(h>w){//constant width
+				for(var i=0;i<stuff.length;i++){
+					stuff[i].style.height='auto';
+					stuff[i].style.width=w-60+'px';
+				}
+			}
+		}
+		resizeShit();
 		$(window).on('resize', function(){
+			resizeShit();
 			$.getScript("bootstrap.js");
 			$.getScript("ImageGrid.js");
 		});
+		
 		//testing, at steps? too heavy? wierd with google debugger resizing, not window
 	</script>
 
