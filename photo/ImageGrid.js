@@ -69,7 +69,7 @@
 		 */
 		this.initialize = function(images, container, rowTargetHeight, borderOffset) {
 			this.originalImages = images;
-			this.targetHeight = 700;
+			this.targetHeight = 725;
 			this.container = container;
 			this.borderOffset = borderOffset;
 

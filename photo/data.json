@@ -21,23 +21,23 @@
   },
   {
     "image": "5.jpg",
-    "width": 1800,
+    "width": 1200,
     "height": 1200
   },
   {
     "image": "6.jpg",
     "width": 1200,
-    "height": 1200
+    "height": 1800
   },
   {
     "image": "7.jpg",
     "width": 1200,
-    "height": 1800
+    "height": 1200
   },
   {
     "image": "8.jpg",
-    "width": 1200,
-    "height": 1800
+    "width": 1800,
+    "height": 1200
   },
   {
     "image": "9.jpg",
@@ -52,11 +52,32 @@
   {
     "image": "11.jpg",
     "width": 1200,
-    "height": 1200
+    "height": 1800
   },
   {
     "image": "12.jpg",
+    "width": 1200,
+    "height": 1800
+  },
+  {
+    "image": "13.jpg",
+    "width": 1200,
+    "height": 1800
+  },
+  {
+    "image": "14.jpg",
+    "width": 1200,
+    "height": 1800
+  },
+  {
+    "image": "15.jpg",
+    "width": 1200,
+    "height": 1800
+  },
+  {
+    "image": "16.jpg",
     "width": 1920,
     "height": 1080
   }
+  
 ]
