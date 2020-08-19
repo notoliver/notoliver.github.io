@@ -11,15 +11,12 @@
 	<link rel="stylesheet" type="text/css" href="../assets/site.css">
 	<style>
 		@font-face { font-family: HelvetiHand; src: url('../HelvetiHand.ttf'); }
-		.fade{
-			display:none;
-		}
 	</style>
 </head>
 
 <body>
 	<div id="header" level="1" active="photo"></div>
-	<div class='fade'>
+
 	<div id="myModal" class="modal">
 		<span class="close cursor" onclick="closeModal()">&times;</span>
 		<div id="modal-content" num="15" class="modal-content"></div>
@@ -31,9 +28,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="lightbox.js"></script>
 	<script src="../assets/header.js"></script>
-	<script>
-		$(".fade").fadeIn(600)
-	</script>
 
 	<script>
 		function resizeShit(){
@@ -49,7 +43,7 @@
 			if(h>w){//constant width
 				for(var i=0;i<stuff.length;i++){
 					stuff[i].style.height='auto';
-					stuff[i].style.width=w-60+'px';
+					stuff[i].style.width=w-20+'px';
 				}
 			}
 		}
@@ -63,6 +57,6 @@
 		//testing, at steps? too heavy? wierd with google debugger resizing, not window
 	</script>
 
-</div></body>
+</body>
 
 </html>
