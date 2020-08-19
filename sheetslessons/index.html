@@ -36,29 +36,29 @@
 		  max-width: 100%;
 		  max-height: 100%;
 		}
-		.container img{
-			animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1};
-		}
+		
 		/* .container::after{
 		  content: '';
 		  flex-grow: 1000000000;
 		} */
 		.bontainer {
 		  position: relative;
-		  
 		}
 		.overlay {
-		  position: absolute;
-		  top: 0;
-		  bottom: 6px;
-		  left: 0;
-		  right: 0;
-		  opacity: 0;
-		  transition: .2s ease;
-		  background-color: #ffffff;
-		  display: flex;
-		  justify-content: center;
-		  align-items: center;	  
+			position: absolute;
+			top: 0;
+			bottom: 6px;
+			left: 0;
+			right: 0;
+			opacity: 0;
+			transition: .2s ease;
+			background-color: #ffffff;
+			display: flex;
+			justify-content: center;
+			align-items: center;	  
+		}
+		.fade{
+			display:none;
 		}
 		
 		@media screen and (min-width: 600px) {
@@ -91,7 +91,7 @@
 
 <body>
 	<div id="header" level="1" active="sheetslessons"></div>
-
+	<div class='fade'>
 	<h1>Here you can find all of my videos and sheet music</h1>
 	<p>There's a mix of covers and lessons of varying depth, as well as tabs, lead sheets, and sheet music</p>
 	<p>I hope you enjoy, get inspired, and/or learn something!</p>
@@ -769,7 +769,11 @@
 	</div>
 
 	<script src="../assets/header.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(".fade").fadeIn(600)
+	</script>
 
-</body>
+</div></body>
 
 </html>

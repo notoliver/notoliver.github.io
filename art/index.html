@@ -15,12 +15,15 @@
   		margin-right: 10px;
 		animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1};
 	}
-		
+	.fade{
+		display:none;
+	}
 </style>
 
 <body>
 
 	<div id="header" level="1" active="art"></div>
+	<div class='fade'>
 	<figure>
 		<img src="deluxedc.gif" style="width:100%;max-width:622px;"/>
 		<figcaption>D'Angelico Deluxe DC</figcaption>
@@ -36,8 +39,12 @@
 	
 	
 	<script src="../assets/header.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(".fade").fadeIn(1000)
+	</script>
 	
-</body>
+</div></body>
 
 
 </html>

@@ -42,11 +42,14 @@
 	figure:hover{
 		opacity:0.9;
 	}
+	.fade{
+		display:none;
+	}
 </style>
 
 <body>
 	<div id="header" level="1" active="music"></div>
-	
+	<div class='fade'>
 	<div class='container'>
 		<figure><a href='ep3'>
 			<img src='ep3.jpg' alt='ep3'/>
@@ -76,8 +79,12 @@
 	</div>
 
 	<script src="../assets/header.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(".fade").fadeIn(1000)
+	</script>
 	
-</body>
+</div></body>
 
 
 </html>
