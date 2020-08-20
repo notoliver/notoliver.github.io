@@ -3,28 +3,27 @@
 
 <head>
 	<title>About</title>
-	<link rel='icon' href='../favicon.ico' type='image/ico'>	
-	</head>
-	<meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=yes">
-	<link rel="stylesheet" type="text/css" href="../assets/header.css">
-	<link rel="stylesheet" type="text/css" href="../assets/site.css">
-	<style>
-		@font-face { font-family: HelvetiHand; src: url('../HelvetiHand.ttf'); }
-		.ok img{
-			animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1};
-		}
-		a{
-			text-decoration:none;
-		}
-	</style>
+	<link rel='icon' href='../assets/favicon.ico' type='image/ico'>	
+	
+	<meta name='viewport' content='width=device-width, initial-scale=0.9, shrink-to-fit=yes'>
+	<link rel='stylesheet' type='text/css' href='../assets/header.css'>
+	<link rel='stylesheet' type='text/css' href='../assets/site.css'>
+	<script src='../assets/fade.js'></script>
+
 </head>	
 
 <body>
-	<div id="header" level="1" active="about"></div>
+	<svg id='fader'></svg>
+	<script>
+		fadeInPage();
+	</script>
+	
+	<div id='header' level='1' active='photo'></div>
+	<script src='../assets/header.js'></script>
 
-	<div class="ok">
-		<img src="../assets/aboutplain.png" style="width:90%;max-width:500px;"/>
-		<div style="margin-right:auto;margin-left:auto;margin-bottom:25px;width:90%;max-width:700px;">
+	<div>
+		<img src='../assets/aboutplain.png' style='width:90%;max-width:500px;'/>
+		<div style='margin-right:auto;margin-left:auto;margin-bottom:25px;width:90%;max-width:700px;'>
 			<h1>Hello, thanks for visiting!</h1>
 			<p>I'm Oliver and I like things, most of all music! This is my minimal built-from-scratch website where you can find a bunch of links.</p>
 			<p>I transcribe, share knowledge about, and cover music I love on youtube.</p>
@@ -33,17 +32,14 @@
 			<p>If you want to get in touch (need some guitar/keys??) and/or see what I'm up to, check out my socials and email.</p>
 		</div>
 		<div>
-			<a href="https://www.youtube.com/c/naughtoliver" target='_blank' class='icon'><img src='../assets/youtube.png' alt='yt' width="50"/></a>
-			<a href='https://open.spotify.com/artist/4Ey282MsSL6OPSjpxFFL6d' target='_blank' class='icon'><img src='../assets/spotify.png' alt='spotify' width="50"/></a>
-			<a href='https://oliverqiu.bandcamp.com' target='_blank' class='icon'><img src='../assets/bandcamp.png' alt='bandcamp' width="50"/></a>
-			<a href="https://www.last.fm/user/naught_oliver" target='_blank' class='icon'><img src='../assets/lastfm.png' alt='lfm' width="50"/></a>
-			<a href="https://www.instagram.com/oliverqiu_/" target='_blank' class='icon'><img src='../assets/instagram.png' alt='insta' width="50"/></a>
-			<a href="mailto:me@oliverqiu.com" class='icon'><img src='../assets/email.png' alt='email' width="50"/></a>
+			<a href='https://www.youtube.com/c/naughtoliver' target='_blank' class='icon'><img src='../assets/youtube.png' alt='yt' width='50'/></a>
+			<a href='https://open.spotify.com/artist/4Ey282MsSL6OPSjpxFFL6d' target='_blank' class='icon'><img src='../assets/spotify.png' alt='spotify' width='50'/></a>
+			<a href='https://oliverqiu.bandcamp.com' target='_blank' class='icon'><img src='../assets/bandcamp.png' alt='bandcamp' width='50'/></a>
+			<a href='https://www.last.fm/user/naught_oliver' target='_blank' class='icon'><img src='../assets/lastfm.png' alt='lfm' width='50'/></a>
+			<a href='https://www.instagram.com/oliverqiu_/' target='_blank' class='icon'><img src='../assets/instagram.png' alt='insta' width='50'/></a>
+			<a href='mailto:me@oliverqiu.com' class='icon'><img src='../assets/email.png' alt='email' width='50'/></a>
 		</div>
 	</div>
-
-	<script src="../assets/header.js"></script>
-	
 </body>
 
 

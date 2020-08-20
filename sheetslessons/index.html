@@ -3,12 +3,14 @@
 
 <head>
 	<title>Sheets</title>
-	<link rel='icon' href='../favicon.ico' type='image/ico'>
-	<meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="../assets/header.css">
-	<link rel="stylesheet" type="text/css" href="../assets/site.css">
+	<link rel='icon' href='../assets/favicon.ico' type='image/ico'>
+
+	<meta name='viewport' content='width=device-width, initial-scale=0.9, shrink-to-fit=no'>
+	<link rel='stylesheet' type='text/css' href='../assets/header.css'>
+	<link rel='stylesheet' type='text/css' href='../assets/site.css'>
+	<script src='../assets/fade.js'></script>
+
 	<style>
-		@font-face { font-family: HelvetiHand; src: url('../HelvetiHand.ttf'); }
 		.icon:hover img {
 			opacity: 0.4;
 		}
@@ -36,11 +38,6 @@
 		  max-width: 100%;
 		  max-height: 100%;
 		}
-		
-		/* .container::after{
-		  content: '';
-		  flex-grow: 1000000000;
-		} */
 		.bontainer {
 		  position: relative;
 		}
@@ -70,6 +67,7 @@
 			}
 		}
 	</style>
+
 	<script>
 		function toggleOverlay(x) {
 			if(window.innerWidth>600){
@@ -87,7 +85,13 @@
 </head>
 
 <body>
-	<div id="header" level="1" active="sheetslessons"></div>
+	<svg id='fader'></svg>
+	<script>
+		fadeInPage();
+	</script>
+
+	<div id='header' level='1' active='music'></div>
+	<script src='../assets/header.js'></script>
 
 	<h1>Here you can find all of my videos and sheet music</h1>
 	<p>There's a mix of covers and lessons of varying depth, as well as tabs, lead sheets, and sheet music</p>
@@ -96,7 +100,7 @@
 		<figure onClick="toggleOverlay('allnightjessesolos')">
 			<div class = 'bontainer'>
 			<img src='thumbnails/allnightjessesolos.jpg' alt='allnightjessesolos'/>
-				<div class='overlay' id="overlayallnightjessesolos" >
+				<div class='overlay' id='overlayallnightjessesolos'>
 					<div>
 						<a href='https://youtu.be/mvmwUzDVxSM' target='_blank' class='icon'><img src='coverwatch.png' alt='yt' height='55'/></a>	
 						<br>
@@ -111,7 +115,7 @@
 		<figure onClick="toggleOverlay('stormy')">
 			<div class = 'bontainer'>
 			<img src='thumbnails/stormy.jpg' alt='stormy'/>
-				<div class='overlay' id="overlaystormy" >
+				<div class='overlay' id='overlaystormy'>
 					<div>
 						<a href='https://youtu.be/E_KGtv8Bblg' target='_blank' class='icon'><img src='coverwatch.png' alt='yt' height='55'/></a>	
 						<br>
@@ -124,7 +128,7 @@
 		<figure onClick="toggleOverlay('dorian')">
 			<div class = 'bontainer'>
 			<img src='thumbnails/dorian.jpg' alt='dorian'/>
-				<div class='overlay' id="overlaydorian" >
+				<div class='overlay' id='overlaydorian'>
 					<div>
 						<a href='https://youtu.be/z-lpruDZHbU' target='_blank' class='icon'><img src='learnwatch.png' alt='yt' height='55'/></a>	
 						<br>
@@ -139,7 +143,7 @@
 		<figure onClick="toggleOverlay('teensex')">
 			<div class = 'bontainer'>
 			<img src='thumbnails/teensex.jpg' alt='teensex'/>
-				<div class='overlay' id="overlayteensex" >
+				<div class='overlay' id='overlayteensex'>
 					<div>
 						<a href='https://youtu.be/BDrncme6pVg' target='_blank' class='icon'><img src='coverwatch.png' alt='yt' height='55'/></a>	
 						<br>
@@ -155,7 +159,7 @@
 		<figure onClick="toggleOverlay('gosenshi')">
 			<div class = 'bontainer'>
 			<img src='thumbnails/gosenshi.jpg' alt='gosenshi'/>
-				<div class='overlay' id="overlaygosenshi" >
+				<div class='overlay' id='overlaygosenshi'>
 					<div>
 						<a href='https://youtu.be/F4sSTGECvjI' target='_blank' class='icon'><img src='learnwatch.png' alt='yt' height='55'/></a>	
 						<br>
@@ -170,7 +174,7 @@
 		<figure onClick="toggleOverlay('bnd')">
 			<div class = 'bontainer'>
 			<img src='thumbnails/bnd.jpg' alt='bnd'/>
-				<div class='overlay' id="overlaybnd" >
+				<div class='overlay' id='overlaybnd'>
 					<div>
 						<a href='https://youtu.be/nRG2AqJSv4M' target='_blank' class='icon'><img src='coverwatch.png' alt='yt' height='55'/></a>	
 						<br>
@@ -764,9 +768,6 @@
 			<figcaption>Numb (Men I Trust) Bass Cover + Harmonic Analysis</figcaption>
 		</figure>
 	</div>
-
-	<script src="../assets/header.js"></script>
-
 </body>
 
 </html>

@@ -3,19 +3,24 @@
 
 <head>
 	<title>Photo</title>
-	<link rel='icon' href='../../favicon.ico' type='image/ico'>	
+	<link rel='icon' href='../assets/favicon.ico' type='image/ico'>	
+
 	<meta name='viewport' content='width=device-width, initial-scale=0.9, shrink-to-fit=no'>
 	<meta charset='utf-8'>
 	<link rel='stylesheet' type='text/css' href='galleries.css'>
 	<link rel='stylesheet' type='text/css' href='../assets/header.css'>
 	<link rel='stylesheet' type='text/css' href='../assets/site.css'>
-	<style>
-		@font-face { font-family: HelvetiHand; src: url('../HelvetiHand.ttf'); }
-	</style>
+	<script src='../assets/fade.js'></script>
 </head>
 
 <body>
+	<svg id='fader'></svg>
+	<script>
+		fadeInPage();
+	</script>
+	
 	<div id='header' level='1' active='photo'></div>
+	<script src='../assets/header.js'></script>
 
 	<div id='myModal' class='modal'>
 		<span class='close cursor' onclick='closeModal()'>&times;</span>
@@ -27,7 +32,6 @@
 	<script src='bootstrap.js'></script>
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 	<script src='lightbox.js'></script>
-	<script src='../assets/header.js'></script>
 
 	<script>
 		function resizeShit(){
@@ -53,10 +57,8 @@
 			$.getScript('bootstrap.js');
 			$.getScript('ImageGrid.js');
 		});
-		
 		//testing, at steps? too heavy? wierd with google debugger resizing, not window
 	</script>
-
 </body>
 
 </html>
