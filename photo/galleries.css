@@ -51,6 +51,7 @@
 .mySlides img{
 	display: block;
 	margin: 0 auto;
+	animation:opac 0.5s}@keyframes opac{from{opacity:0} to{opacity:1};
 }
 .overlay {
 	margin: 0 auto;
