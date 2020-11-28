@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
             anchors[idx].pathname === window.location.pathname ||
             anchors[idx].pathname.indexOf(".pdf")>-1 ||
             anchors[idx].pathname ==="https://oliverqiu.com/") {
-            //console.log("what");
+            console.log("what");
             continue;
         }
         anchors[idx].addEventListener('click', function(event) {
