@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             anchors[idx].pathname === window.location.pathname ||
             anchors[idx].pathname.indexOf(".pdf")>-1 ||
             anchors[idx].className.indexOf("redirect")>-1) {
-            console.log("what");
+            //console.log("what");
             continue;
         }
         anchors[idx].addEventListener('click', function(event) {

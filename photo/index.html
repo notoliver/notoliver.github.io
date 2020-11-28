@@ -22,7 +22,7 @@
 
 	<div id='myModal' class='modal'>
 		<span class='close cursor' onclick='closeModal()'>&times;</span>
-		<div id='modal-content' num='16' class='modal-content'></div>
+		<div id='modal-content' num='13' class='modal-content'></div>
 	</div>
 	<div class='wrapper'></div>
 
@@ -38,6 +38,12 @@
 			var h = window.innerHeight;
 			if(w>h){//constant height
 				for(var i=0;i<stuff.length;i++){
+					if(i==6||i==12){
+						//console.log("wide"); TEMPORARY SHITTY FIXLOL 
+						stuff[i].style.height='auto';
+						stuff[i].style.width=w-50+'px';
+						continue;
+					}
 					stuff[i].style.width='auto';
 					stuff[i].style.height=h-100+'px';
 				}
