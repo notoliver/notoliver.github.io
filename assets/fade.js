@@ -9,11 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
     var anchors = document.getElementsByTagName('a');
     
     for (var idx=0; idx<anchors.length; idx+=1) {
-        //console.log(anchors[idx].hostname);
+        //console.log(anchors[idx].className);
         if (anchors[idx].hostname !== window.location.hostname ||
             anchors[idx].pathname === window.location.pathname ||
             anchors[idx].pathname.indexOf(".pdf")>-1 ||
-            anchors[idx].hostname ==="oliverqiu.com") {
+            anchors[idx].className.indexOf("redirect")>-1) {
             console.log("what");
             continue;
         }
