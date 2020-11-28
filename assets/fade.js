@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     for (var idx=0; idx<anchors.length; idx+=1) {
         if (anchors[idx].hostname !== window.location.hostname ||
-            anchors[idx].pathname === window.location.pathname) {
+            anchors[idx].pathname === window.location.pathname ||
+            anchors[idx].pathname.indexOf(".pdf">-1)) {
             continue;
         }
         anchors[idx].addEventListener('click', function(event) {
