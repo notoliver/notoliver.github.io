@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (anchors[idx].hostname !== window.location.hostname ||
             anchors[idx].pathname === window.location.pathname ||
             anchors[idx].pathname.indexOf(".pdf")>-1) {
-            console.log("what");
+            //console.log("what");
             continue;
         }
         anchors[idx].addEventListener('click', function(event) {
