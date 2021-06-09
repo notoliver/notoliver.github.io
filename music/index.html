@@ -3,12 +3,12 @@
 
 <head>
 	<title>Music</title>
-	<link rel='icon' href='../assets/favicon.ico' type='image/ico'>	
+	<link rel='icon' href='/assets/favicon.ico' type='image/ico'>	
 
 	<meta name='viewport' content='width=device-width, initial-scale=0.9, shrink-to-fit=no'>
-	<link rel='stylesheet' type='text/css' href='../assets/header.css'>
-	<link rel='stylesheet' type='text/css' href='../assets/site.css'>
-	<script src='../assets/fade.js'></script>
+	<link rel='stylesheet' type='text/css' href='/assets/header.css'>
+	<link rel='stylesheet' type='text/css' href='/assets/site.css'>
+	<script src='/assets/fade.js'></script>
 
 	<style>
 		.container {
@@ -45,56 +45,17 @@
 
 <body>
 	<svg id='fader'></svg>
-	<script>
-		fadeInPage();
-	</script>
+	<script>fadeInPage();</script>
 
-	<div id='header' level='1' active='music'></div>
-	<script src='../assets/header.js'></script>
+	<div id='header' active='music'></div>
+	
+	<div class='container' id='releases'></div>
 
-	<div class='container'>
-		<figure>
-			<a href='ep4'>
-				<img src='ep4.jpg' alt='ep4'/>
-				<div class='caption'>Compact Muzak</div>
-				<div class='caption date'>February 19, 2021</div>
-			</a>
-		</figure>
-		<figure>
-			<a href='ep3'>
-				<img src='ep3.jpg' alt='ep3'/>
-				<div class='caption'>Sounds For Being: Sitting</div>
-				<div class='caption date'>July 30, 2020</div>
-			</a>
-		</figure>
-		<figure>
-			<a href='ep2'>
-				<img src='ep2.jpg' alt='ep2'/>
-				<div class='caption'>Sounds For Being: Lying</div>
-				<div class='caption date'>April 22, 2020</div>
-			</a>
-		</figure>
-		<figure>
-			<a href='ep1'>
-				<img src='ep1.jpg' alt='ep1'/>
-				<div class='caption'>Some Things</div>
-				<div class='caption date'>February 21, 2020</div>
-			</a>
-		</figure>
-		<figure></figure>
-		<figure></figure>
-		
-	</div>
+	<div class='icons'></div>
 
-	<div class='icons'>
-		<a href='https://www.youtube.com/c/naughtoliver' target='_blank' class='icon'><img src='../assets/youtube.png' alt='yt' width='50'/></a>
-		<a href='https://open.spotify.com/artist/4Ey282MsSL6OPSjpxFFL6d' target='_blank' class='icon'><img src='../assets/spotify.png' alt='spotify' width='50'/></a>
-		<a href='https://oliverqiu.bandcamp.com' target='_blank' class='icon'><img src='../assets/bandcamp.png' alt='bandcamp' width='50'/></a>
-		<a href='https://www.last.fm/user/naught_oliver' target='_blank' class='icon'><img src='../assets/lastfm.png' alt='lfm' width='50'/></a>
-		<a href='https://www.instagram.com/oliverqiu_/' target='_blank' class='icon'><img src='../assets/instagram.png' alt='insta' width='50'/></a>
-		<a href='mailto:me@oliverqiu.com' class='icon'><img src='../assets/email.png' alt='email' width='50'/></a>
-	</div>
+	<script src='/assets/header.js'></script>
+	<script src='loadmusic.js'></script>
+	<script src='/assets/footer.js'></script>
 </body>
-
 
 </html>

@@ -83,7 +83,7 @@ var captions=[{},
 
 var text ='';
 for(var i=1;i<=num;i++){
-    text+='<div class=\'mySlides\'>\r\n\t<img src=\''+i+'.jpg\'\/>\r\n\t<di'+
+    text+='<div class=\'mySlides\'>\r\n\t<img data-src=\''+i+'.jpg\' class=\'lazyload\'\/>\r\n\t<di'+
     'v class=\'overlay\'>\r\n\t\t<div class=\'nav left\' onclick=\'plusSlid'+
     'es(-1)\'><a class=\'prev\' >&#10094;<\/a><\/di'+
     'v>\r\n\t\t<div class=\'nav right\' onclick=\'plusSlides(1)\'><a clas'+

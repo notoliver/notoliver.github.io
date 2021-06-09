@@ -221,7 +221,7 @@
 				for(var n = 0; n < rows[i].length; n++) {
 					var image = rows[i][n];
 					output += '<div class="zoomer" onclick="openModal();currentSlide('+num+')" class="hover-shadow" style="width:'
-					+ Math.ceil(image.width) + 'px;height:' + image.height + 'px;"><img src="' + image.image + '" loading="lazy" width="' 
+					+ Math.ceil(image.width) + 'px;height:' + image.height + 'px;"><img data-src="' + image.image + '" class="lazyload" width="' 
 					+ Math.ceil(image.width) + '" height="' + image.height + '" /></div>';
 					num++;
 				}

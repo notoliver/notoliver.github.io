@@ -3,34 +3,34 @@
 
 <head>
 	<title>Photo</title>
-	<link rel='icon' href='../assets/favicon.ico' type='image/ico'>	
+	<link rel='icon' href='/assets/favicon.ico' type='image/ico'>	
 
 	<meta name='viewport' content='width=device-width, initial-scale=0.9, shrink-to-fit=no'>
 	<meta charset='utf-8'>
 	<link rel='stylesheet' type='text/css' href='galleries.css'>
-	<link rel='stylesheet' type='text/css' href='../assets/header.css'>
-	<link rel='stylesheet' type='text/css' href='../assets/site.css'>
-	<script src='../assets/fade.js'></script>
+	<link rel='stylesheet' type='text/css' href='/assets/header.css'>
+	<link rel='stylesheet' type='text/css' href='/assets/site.css'>
+	<script src='/assets/lazysizes.min.js' async=''></script>
+	<script src='/assets/fade.js'></script>
 </head>
 
 <body>
 	<svg id='fader'></svg>
 	<script>fadeInPage();</script>
 	
-	<div id='header' level='1' active='photo'></div>
-	<script src='../assets/header.js'></script>
-
+	<div id='header' active='photo'></div>
+	
 	<div id='myModal' class='modal'>
 		<span class='close cursor' onclick='closeModal()'>&times;</span>
 		<div id='modal-content' num='13' class='modal-content'></div>
 	</div>
 	<div class='wrapper'></div>
 
+	<script src='/assets/header.js'></script>
 	<script src='ImageGrid.js'></script>
 	<script src='bootstrap.js'></script>
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 	<script src='lightbox.js'></script>
-
 	<script>
 		function resizeShit(){
 			var stuff = document.querySelectorAll('.mySlides > img');
