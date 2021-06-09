@@ -39,7 +39,7 @@ var innertext = '';
 </figure>
 */
 for(var i=0;i<works.length;i++){
-    innertext += '<figure>\r\n    <img src=\"'+works[i].url+'\" style=\"width:100%;max-width:'+works[i].maxWidth+'px;\"\/>\r\n    <figcaption>'+works[i].caption+'<\/figcaption>\t\r\n<\/figure>'
+    innertext += '<figure>\r\n    <img data-src=\"'+works[i].url+'\" class=\'lazyload\' style=\"width:100%;max-width:'+works[i].maxWidth+'px;\"\/>\r\n    <figcaption>'+works[i].caption+'<\/figcaption>\t\r\n<\/figure>'
 }
 
 document.getElementById('works').innerHTML = innertext;
