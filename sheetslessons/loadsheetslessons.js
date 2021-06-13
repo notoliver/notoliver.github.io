@@ -1,6 +1,28 @@
 /* data array and size map */
 var vids = [
     {
+        id: 'tides',
+        title: 'Tides (Men I Trust) Cover + Chords Tutorial',
+        links: [
+            {
+                url: 'https://youtu.be/GIFWmAmjNtw',
+                type: 'learn'
+            },
+            {
+                url: 'https://youtu.be/id9abvUtS5s',
+                type: 'original'
+            },
+            {
+                url: 'tides.pdf',
+                type: 'leadsheet'
+            },
+            {
+                url: 'tidesbass.pdf',
+                type: 'btab'
+            }
+        ]
+    },
+    {
         id: 'rollwith',
         title: 'I Wanna Roll With You (Connan Mockasin) Cover + Chords',
         links: [
