@@ -19,46 +19,20 @@
 	
 	<div id='header' active='photo'></div>
 	
-	<div id='myModal' class='modal'>
-		<span class='close cursor' onclick='closeModal()'>&times;</span>
-		<div id='modal-content' num='13' class='modal-content'></div>
-	</div>
-	<div class='wrapper'></div>
+	<div id='myModal' class='modal'></div>
+	<div id='gallery' class='wrapper'></div>
 
 	<script src='/assets/header.js'></script>
-	<script src='ImageGrid.js'></script>
-	<script src='bootstrap.js'></script>
+	
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-	<script src='lightbox.js'></script>
+	<script src='not_photogrid.js'></script>
+	<script src='not_lightbox.js'></script>
+	
 	<script>
-		function resizeShit(){
-			var stuff = document.querySelectorAll('.mySlides > img');
-			var w = window.innerWidth;
-			var h = window.innerHeight;
-			if(w>h){//constant height
-				for(var i=0;i<stuff.length;i++){
-					if(i==6||i==12){
-						//console.log("wide"); TEMPORARY SHITTY FIXLOL 
-						stuff[i].style.height='auto';
-						stuff[i].style.width=w-50+'px';
-						continue;
-					}
-					stuff[i].style.width='auto';
-					stuff[i].style.height=h-100+'px';
-				}
-			}
-			if(h>w){//constant width
-				for(var i=0;i<stuff.length;i++){
-					stuff[i].style.height='auto';
-					stuff[i].style.width=w-20+'px';
-				}
-			}
-		}
-		resizeShit();
 		$(window).on('resize', function(){
-			resizeShit();
-			$.getScript('bootstrap.js');
-			$.getScript('ImageGrid.js');
+			resizeLightbox();
+			notGrid(document.getElementById('gallery'),'photos',750);
+			notGrid(document.getElementById('gallerye'),'photose',250);
 		});
 		//testing, at steps? too heavy? wierd with google debugger resizing, not window
 	</script>
