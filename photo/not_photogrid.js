@@ -1,68 +1,68 @@
 var photos = [
     {
-      "image": "1.jpg",
-      "width": 1800,
-      "height": 1200
+      image: "1.jpg",
+      width: 1800,
+      height: 1200
     },
     {
-      "image": "2.jpg",
-      "width": 1200,
-      "height": 1800
+      image: "2.jpg",
+      width: 1200,
+      height: 1800
     },
     {
-      "image": "3.jpg",
-      "width": 1200,
-      "height": 1800
+      image: "3.jpg",
+      width: 1200,
+      height: 1800
     },
     {
-      "image": "4.jpg",
-      "width": 1200,
-      "height": 1800
+      image: "4.jpg",
+      width: 1200,
+      height: 1800
     },
     {
-      "image": "5.jpg",
-      "width": 1800,
-      "height": 1200
+      image: "5.jpg",
+      width: 1800,
+      height: 1200
     },
     {
-      "image": "6.jpg",
-      "width": 1200,
-      "height": 1800
+      image: "6.jpg",
+      width: 1200,
+      height: 1800
     },
     {
-      "image": "7.jpg",
-      "width": 2000,
-      "height": 600
+      image: "7.jpg",
+      width: 2000,
+      height: 600
     },
     {
-      "image": "8.jpg",
-      "width": 1200,
-      "height": 1800
+      image: "8.jpg",
+      width: 1200,
+      height: 1800
     },
     {
-      "image": "9.jpg",
-      "width": 1200,
-      "height": 1800
+      image: "9.jpg",
+      width: 1200,
+      height: 1800
     },
     {
-      "image": "10.jpg",
-      "width": 1800,
-      "height": 1200
+      image: "10.jpg",
+      width: 1800,
+      height: 1200
     },
     {
-      "image": "11.jpg",
-      "width": 1800,
-      "height": 1350
+      image: "11.jpg",
+      width: 1800,
+      height: 1350
     },
     {
-      "image": "12.jpg",
-      "width": 1800,
-      "height": 1200
+      image: "12.jpg",
+      width: 1800,
+      height: 1200
     },
     {
-      "image": "13.jpg",
-      "width": 2000,
-      "height": 732
+      image: "13.jpg",
+      width: 2000,
+      height: 732
     }
 ]
 
