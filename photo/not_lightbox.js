@@ -140,31 +140,6 @@ function showSlides(n) {
     }
     slides[slideIndex-1].style.display = 'block';
 }
-
-function resizeLightbox(){
-    var stuff = document.querySelectorAll('.mySlides > img');
-    var w = window.innerWidth;
-    var h = window.innerHeight;
-    if(w>h){//constant height
-        for(var i=0;i<stuff.length;i++){
-            if(i==6||i==12){
-                //console.log('wide'); TEMPORARY SHITTY FIXLOL 
-                stuff[i].style.height='auto';
-                stuff[i].style.width=w-50+'px';
-                continue;
-            }
-            stuff[i].style.width='auto';
-            stuff[i].style.height=h-100+'px';
-        }
-    }
-    if(h>w){//constant width
-        for(var i=0;i<stuff.length;i++){
-            stuff[i].style.height='auto';
-            stuff[i].style.width=w-20+'px';
-        }
-    }
-}
-
 /* #endregion */
 
 /* #region open close */
@@ -189,5 +164,3 @@ document.addEventListener('keydown', function(event) {
     }
 });
 /* #endregion */
-
-resizeLightbox();

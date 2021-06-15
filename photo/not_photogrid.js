@@ -214,3 +214,6 @@ function notGrid(cont, arr, targetH){
 }
 
 notGrid(document.getElementById('gallery'),'photos',750);
+$(window).on('resize', function(){
+  notGrid(document.getElementById('gallery'),'photos',750);
+});

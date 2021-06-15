@@ -3,9 +3,6 @@
 	margin: 0 auto;
 }
 .image-row {
-	width: 100%;
-	white-space:nowrap;
-	line-height: 0;
 	display: flex;
 }
 .zoomer{	
@@ -46,11 +43,15 @@
 /* Hide the slides by default */
 .mySlides {
 	display: none;
+	
 }
 .mySlides img{
 	display: block;
 	margin: 0 auto;
+	max-width:95vw;
+    max-height:88vh;
 	animation:opac 0.5s}@keyframes opac{from{opacity:0} to{opacity:1};
+	
 }
 .overlay {
 	margin: 0 auto;
@@ -79,6 +80,7 @@
 	right: 0;
 	border-radius: 3px 0 0 3px;
 }
+/* Position the "prev button" to the left */
 .prev {
 	left: 0;
 	border-radius: 3px 0 0 3px;
@@ -88,6 +90,8 @@
 	top: 0;
 	bottom: 0;
 }
+
+/*click areas */
 .nav.left{		
 	float:left;	
 	left: 0;
@@ -103,6 +107,8 @@
 .nav:hover{
 	opacity:100;
 }
+
+/* captions */
 .caption{
 	margin-top:5px;
 }
