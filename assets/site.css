@@ -2,10 +2,12 @@ html{
     min-height: 100%;
 }
 @font-face { font-family: HelvetiHand; src: url('HelvetiHand.ttf'); }
+@font-face { font-family: NotFont; src: url('NotFont.ttf'); }
+@font-face { font-family: NotFontBold; src: url('NotFontBold.ttf'); }
 body {
     background: rgb(255,246,230);
     background: linear-gradient(83deg, rgba(255,246,230,1) 0%, rgba(255,247,235,1) 25%, rgba(255,251,245,1) 50%, rgba(255,247,235,1) 75%, rgba(255,246,230,1) 100%);
-    font-family: HelvetiHand;
+    font-family: NotFontBold;
     text-align: center;
 }
 .icon:hover{
