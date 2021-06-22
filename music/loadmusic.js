@@ -46,7 +46,7 @@ for(var i=0;i<releases.length;i++){
         innertext += '<figure><\/figure>'
     }
     else{
-        innertext += '<figure>\r\n    <a href=\'ep4\'>\r\n        <img src=\''+releases[i].url+'.jpg\' alt=\'ep4\'\/>\r\n        <div class=\'caption\'>'+releases[i].title+'<\/div>\r\n        <div class=\'caption date\'>'+releases[i].date+'<\/div>\r\n    <\/a>\r\n<\/figure>'
+        innertext += '<figure>\r\n    <a href=\''+releases[i].url+'\'>\r\n        <img src=\''+releases[i].url+'.jpg\' alt=\''+releases[i].url+'\'\/>\r\n        <div class=\'caption\'>'+releases[i].title+'<\/div>\r\n        <div class=\'caption date\'>'+releases[i].date+'<\/div>\r\n    <\/a>\r\n<\/figure>'
     }
 }
 
