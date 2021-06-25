@@ -946,7 +946,7 @@ var vids = [
     },
     {
         id: 'chineserestaurant',
-        title: 'Plastic Love (Mariya Takeuchi) Guitar Cover',
+        title: 'Chinese Restaurant (Takako Mamiya) Guitar Cover',
         links: [
             {
                 url: 'https://youtu.be/DjvFDQ5iQrk',
