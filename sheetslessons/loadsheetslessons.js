@@ -1,5 +1,27 @@
 /* data array and size map */
 var vids = [
+	{
+        id: 'wetlandstudio',
+        title: 'Wet Land (Hiroshi Yoshimura) Cover + Sheet Music',
+        links: [
+            {
+                url: 'https://youtu.be/Zem8aKrFqzo',
+                type: 'cover'
+            },
+            {
+                url: 'https://youtu.be/fTiyi0q37io',
+                type: 'original'
+            },
+            {
+                url: 'wetland.pdf',
+                type: 'sheetmusic'
+            },
+            {
+                url: 'wetlandkeys.pdf',
+                type: 'sheetmusic'
+            }
+        ]
+    },
     {
         id: 'tides',
         title: 'Tides (Men I Trust) Cover + Chords Tutorial',
