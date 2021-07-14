@@ -11,7 +11,7 @@ var vids = [
             {
                 url: 'https://www.youtube.com/watch?v=dQzHgZ8ox7g',
                 type: 'original'
-            }
+            },
             {
                 url: 'allthethingsyouareyujisolos.pdf',
                 type: 'sheetmusic'
