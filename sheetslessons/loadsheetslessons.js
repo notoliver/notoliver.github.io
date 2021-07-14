@@ -1,6 +1,24 @@
 /* data array and size map */
 var vids = [
 	{
+        id: 'allthethingsyuji',
+        title: 'All The Things You Are (Yuji Ohno Trio) Piano Solos Transcription',
+        links: [
+            {
+                url: 'https://youtu.be/jc_VixvDxLE',
+                type: 'cover'
+            },
+            {
+                url: 'https://www.youtube.com/watch?v=dQzHgZ8ox7g',
+                type: 'original'
+            }
+            {
+                url: 'allthethingsyouareyujisolos.pdf',
+                type: 'sheetmusic'
+            }
+        ]
+    },
+	{
         id: 'wetlandstudio',
         title: 'Wet Land (Hiroshi Yoshimura) Cover + Sheet Music',
         links: [
